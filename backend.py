@@ -8,11 +8,11 @@ app = Flask(__name__ ,static_url_path='/static')
 def index():
     return render_template("index.html")
 
-@app.route("/projects")
+@app.route("/projeler")
 def projects():
     return render_template("projects.html")
 
-@app.route("/about")
+@app.route("/hakkımızda")
 def about():
     return render_template("about.html")
 
@@ -29,7 +29,7 @@ def supporsen():
     return render_template("support.html")
 
 
-@app.route("/supports")
+@app.route("/desteklediklerimiz")
 def support():
     return render_template("support.html")
 
